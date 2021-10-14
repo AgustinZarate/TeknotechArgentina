@@ -17,6 +17,7 @@ header {
   width: 100%;
   position: fixed;
   background-color: #088f6d !important;
+  z-index: 1;
 }
 
 .presentation {
@@ -26,7 +27,44 @@ header {
 
 .section-products {
   position: relative;
-  bottom: 5rem;
+  bottom: 10rem;
+}
+
+.parrafo {
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px solid;
+  width: 50%;
+}
+
+.p-1 {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.products {
+  background-color: #3adb93;
+}
+
+.main-content {
+  min-height: 230px;
+  background: #dbdfe5;
+}
+
+.sidebar-content {
+  min-height: 150px;
+  margin-bottom: 30px;
+  background: #b4bac0;
+}
+
+.content {
+  min-height: 45rem;
+  background: #dbdfe5;
+}
+
+.p-li {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
