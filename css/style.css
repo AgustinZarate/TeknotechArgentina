@@ -23,9 +23,39 @@ header {
   position: fixed;
   z-index: 1;
 }
+.navbar h1 {
+  margin: 0 8rem;
+}
+.navbar .navbar-collapse {
+  flex-grow: unset;
+}
+.navbar .navbar-collapse .navbar-nav a {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0s;
+}
+.navbar .navbar-collapse .navbar-nav a:hover {
+  background-image: linear-gradient(#9cd6c0, #00db87);
+  border-radius: 50px;
+}
+
+.active {
+  color: #46a9ca !important;
+  font-weight: bold;
+}
 
 .card {
   border: 1px solid black;
+  min-height: 15rem;
+}
+
+.m-height {
+  min-height: 8rem;
+}
+
+.m-height-2 {
+  min-width: 30rem;
+  min-height: 50rem;
 }
 
 .presentation {
@@ -33,7 +63,7 @@ header {
   width: 100%;
 }
 
-.section-products {
+.section-introdution {
   position: relative;
   bottom: 10rem;
 }
@@ -52,21 +82,70 @@ header {
 
 .products {
   background-image: url("../img/imagenes-background/bg-cards.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.products .container-products {
+  margin: 1rem 0.5rem 0.5rem 2rem;
 }
 
 .card-product {
-  height: 32.5rem;
+  height: 50%;
 }
-
-.main-content {
+.card-product .main-content {
   min-height: 230px;
-  background: #dbdfe5;
+  background: #fff;
+  margin: 0.5rem;
+}
+.card-product .main-content h4 {
+  margin: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card-product .main-content p {
+  font-size: 1.5rem;
+  margin: 0.8rem;
+  padding-left: 0.8rem;
+}
+.card-product .main-content .container-btn {
+  display: flex;
+  justify-content: end;
+}
+.card-product .main-content .container-btn .btn {
+  border: 1px solid black;
+  margin: 0.25rem;
+}
+.card-product .main-content .container-btn .btn:hover {
+  border: none;
 }
 
 .sidebar-content {
+  display: flex;
   min-height: 150px;
   margin-bottom: 30px;
-  background: #b4bac0;
+  background: #fff;
+}
+.sidebar-content .content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar-content .content-card h4 {
+  margin: 1rem;
+}
+.sidebar-content .content-card p {
+  margin: 1rem;
+}
+.sidebar-content .content-card .container-btn {
+  margin: 1rem auto;
+}
+.sidebar-content .content-card .container-btn .btn {
+  border: 1px solid black;
+  margin: 0.5rem;
+}
+.sidebar-content .content-card .container-btn .btn:hover {
+  border: none;
 }
 
 .content {
@@ -75,24 +154,9 @@ header {
 }
 
 .p-li {
+  list-style: none;
   margin: 1rem;
   padding: 1rem;
-}
-
-.icon-li-1 {
-  list-style-image: url("../img/iconos-fondo-azul/target-icon.svg");
-}
-
-.icon-li-2 {
-  list-style-image: url("../img/iconos-fondo-azul/cross-icon.svg");
-}
-
-.icon-li-3 {
-  list-style-image: url("../img/iconos-fondo-azul/computer-icon.svg");
-}
-
-.icon-li-4 {
-  list-style-image: url("../img/iconos-fondo-azul/book-icon.svg");
 }
 
 .btn {
@@ -107,5 +171,27 @@ header {
   background-image: linear-gradient(#9cd6c0, #00db87);
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.295);
 }
+
+.center {
+  margin: 1rem auto;
+}
+
+.col-sm-6 {
+  width: auto;
+}
+
+/* MediaQuery */
+/* .col-6 {
+    width: 50%;
+} */
+.parrafos {
+  position: relative;
+  right: 5rem;
+}
+
+/* 
+.btn-nav {
+
+} */
 
 /*# sourceMappingURL=style.css.map */

@@ -19,32 +19,41 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <h1>Teknotech</h1>
+      <!-- Titulo -->
+      <div>
+        <h1>Teknotech</h1>
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Navbar -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
+          <!-- Dropdown Productos-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle" href="#productos" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              Productos
             </a>
+            <!-- Lista Productos -->
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
+          </li>
+          <!-- Link Nosotros -->
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <!-- Link Contacto -->
+          <li class="nav-item btn-nav">
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -65,8 +74,11 @@
           <p class="display-6 text-start ms-4">Hazlo más simple <br>
             con nuestro Software
           </p>
-          <div class="d-flex justify-content-end">
-            <button class="btn">Contactanos</button>
+          <div class="d-flex justify-content-start">
+            <div class="m-2">
+              <button class="btn">Contactanos</button>
+            </div>
+
           </div>
 
         </div>
@@ -77,33 +89,45 @@
 
   <main>
     <!-- Introduccion -->
-    <div class="ms-4" data-aos="fade-up" data-aos-offset="100">
+    <div class="ms-4 section-introdution" data-aos="fade-up" data-aos-offset="100">
       <div class="row text-center m-1">
         <h3>Con nuestra plataforma digital podras</h3>
       </div>
       <div class="row container-fluid">
         <div class="col-3">
           <div class="card text-center">
-            <img src="img/iconos-header/ícono-tiempo.svg" class="w-100" alt="Icono de reloj con fondo celeste">
-            <p>Gestionar en <br> tiempo real</p>
+            <img src="img/iconos-header/ícono-tiempo.svg" class="w-50 center" alt="Icono de reloj con fondo celeste">
+            <b>
+              <p>Gestionar en <br> tiempo real</p>
+            </b>
+
           </div>
         </div>
         <div class="col-3">
           <div class="card text-center">
-            <img src="img/iconos-header/ícono-optimizar.svg" alt="Icono de procesos con fondo celeste">
-            <p>Optimizar <br> los procesos</p>
+            <img src="img/iconos-header/ícono-optimizar.svg" class="w-50 center"
+              alt="Icono de procesos con fondo celeste">
+            <b>
+              <p>Optimizar <br> los procesos</p>
+            </b>
           </div>
         </div>
         <div class="col-3">
           <div class="card text-center">
-            <img src="img/iconos-header/ícono-productividad.svg" alt="Icono de productividad con fondo celeste">
-            <p>Aumentar la <br> productividad</p>
+            <img src="img/iconos-header/ícono-productividad.svg" class="w-50 center m-height"
+              alt="Icono de productividad con fondo celeste">
+            <b>
+              <p>Aumentar la <br> productividad</p>
+            </b>
           </div>
         </div>
         <div class="col-3">
           <div class="card text-center">
-            <img src="img/iconos-header/icono-ahorro.svg" alt="Icono de ahorro con fondo celeste">
-            <p>Ahorrar costos</p>
+            <img src="img/iconos-header/icono-ahorro.svg" class="w-50 center m-height"
+              alt="Icono de ahorro con fondo celeste">
+            <b>
+              <p>Ahorrar <br> costos</p>
+            </b>
           </div>
         </div>
       </div>
@@ -127,24 +151,26 @@
         </p>
       </div>
     </div>
+
+    <!-- Desarrollo - Implementacion - Soporte -->
     <div class="row container-fluid d-flex justify-content-around bd-highlight mb-2">
       <div class="col-4">
         <div class="card text-center">
-          <img src="img/iconos-simples/ícono-desarrollo.svg" alt="">
+          <img src="img/iconos-simples/ícono-desarrollo.svg" class="w-25 center" alt="">
           <p>Desarrolo</p>
           <button class="btn btn-card">Ver Mas</button>
         </div>
       </div>
       <div class="col-4">
         <div class="card text-center">
-          <img src="img/iconos-simples/icono-implementacion.svg" alt="">
+          <img src="img/iconos-simples/icono-implementacion.svg" class="w-25 center" alt="">
           <p>Implementacion</p>
           <button class="btn btn-card">Ver Mas</button>
         </div>
       </div>
       <div class="col-4">
         <div class="card text-center">
-          <img src="img/iconos-simples/icono-soporte.svg" alt="">
+          <img src="img/iconos-simples/icono-soporte.svg" class="w-25 center" alt="">
           <p>soporte</p>
           <button class="btn btn-card">Ver Mas</button>
         </div>
@@ -154,113 +180,178 @@
 
 
     <!-- Nuestros Productos -->
-    <section class="products container-fluid mt-5">
+    <section class="products container-fluid mt-5 pb-5">
       <div class="text-center">
         <h2 class=" display-4 p-4">Nuestros Productos</h2>
       </div>
 
 
 
-        <div class="row  mt-3">
+      <div class="row container-products">
 
 
-          <!-- Primera Columna -->
-          <div class="col-sm-6">
+        <!-- Primera Columna -->
+        <div class="col-sm-6">
 
-            <!-- ID PACIENTES -->
-            <div class="row card-product">
-              <div class="main-content m-2">
-                <img src="img/fotos/escaneano_pulsera.png" alt="foto escaneo de pulsera">
-                <h4>ID Pacientes</h4>
-                <p>Garantiza la Identidad del Paciente</p>
-                <button class="btn m-1">Ver Mas</button>
+          <!-- ID PACIENTES -->
+          <div class="row card-product">
+            <div class="main-content m-2">
+              <img src="img/fotos/escaneano_pulsera.png" class="w-100 pt-2" alt="foto escaneo de pulsera">
+              <div>
+                <h4> <b>ID Pacientes</b> </h4>
               </div>
-            </div>
-
-            <!-- IBox OR -->
-            <div class="row card-product">
-              <div class="main-content m-2">
-                <img src="img/fotos/quirofano.png" alt="foto quirofano">
-                <h4>iBox OR</h4>
+              <div>
                 <p>Garantiza la Identidad del Paciente</p>
-                <button class="btn m-1">Ver Mas</button>
               </div>
+              <div class="container-btn">
+                <button class="btn">Ver Mas</button>
+              </div>
+
             </div>
           </div>
 
+          <!-- IBox OR -->
+          <div class="row card-product">
+            <div class="main-content m-2">
+              <img src="img/fotos/quirofano.png" class="w-100 pt-2" alt="foto quirofano">
+              <h4>iBox OR </h4>
+              <p>Gestión informatizada integral de quirófanos</p>
+              <div class="container-btn">
+                <button class="btn">Ver Mas</button>
+              </div>
 
-          <!-- Segunda Columna -->
-          <div class="col-sm-6">
-            <div class="row">
-              <div class="col-12">
-                <div class="sidebar-content m-2 d-flex">
-                  <img src="img/fotos/muestra.png" alt="foto tubo de muestra">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Segunda Columna -->
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-12">
+
+              <div class="sidebar-content m-2">
+                <img src="img/fotos/muestra.png" alt="foto tubo de muestra">
+                <div class="content-card">
+
                   <div>
-                    <h4>ID Pacientes</h4>
-                    <p>Garantiza la Identidad del Paciente</p>
-                    <button class="btn m-1">Ver Mas</button>
+                    <h4>iTraz</h4>
+                    <p>Trazabilidad de todas <br> las muestras generadas</p>
+                  </div>
+
+                  <div class="container-btn">
+                    <button class="btn">Ver Mas</button>
                   </div>
 
                 </div>
+
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="sidebar-content m-2 d-flex">
-                  <img src="img/fotos/pildoras.png" alt="foto farmacos">
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="sidebar-content m-2 d-flex">
+                <img src="img/fotos/pildoras.png" alt="foto farmacos">
+                <div class="content-card">
                   <div>
-                    <h4>ID Pacientes</h4>
-                    <p>Garantiza la Identidad del Paciente</p>
-                    <button class="btn m-1">Ver Mas</button>
+                    <h4><b>iFarma</b> </h4>
+                    <p>Gestión inteligente <br> de farmacias</p>
+                  </div>
+
+                  <div class="container-btn">
+                    <button class="btn">Ver Mas</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="sidebar-content m-2 d-flex">
-                  <img src="img/fotos/camas.png" alt="foto camas hospitalarias">
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="sidebar-content m-2 d-flex">
+                <img src="img/fotos/camas.png" alt="foto camas hospitalarias">
+                <div class="content-card">
                   <div>
-                    <h4>ID Pacientes</h4>
-                    <p>Garantiza la Identidad del Paciente</p>
-                    <button class="btn m-1">Ver Mas</button>
+                    <h4> <b>iHos</b> </h4>
+                    <p>Gestión de camas <br> hospitalarias</p>
+                  </div>
+
+                  <div class="container-btn">
+                    <button class="btn">Ver Mas</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
+      </div>
+
     </section>
 
 
 
-
-    <!-- Nosotros -->
-    <section class="container-fluid">
-      <div class="text-end">
-        <h2 class=" display-4 p-4">Nuestros Productos</h2>
+    <!-- Sobre Nosotros -->
+    <section class="container-fluid" id="nosotros">
+      <div class="text-end me-5">
+        <h2 class=" display-4 p-4">Sobre nosotros</h2>
       </div>
       <div class="row">
         <h3 class="text-end">30 Años de inovacion en salud</h3>
         <div class="col-6">
-          <div class="content mt-5"> 
-            <img src="img/fotos/quirofano-2.png" alt="Foto quirofano">
+          <!-- Imagen sobre nosotros -->
+          <div class="content mt-5">
+            <img src="img/fotos/quirofano-2.png" class="w-100 m-height-2" alt="Foto quirofano">
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 parrafos mt-3">
           <ul>
             <!-- parrafo 1 -->
-            <li class="p-li icon-li-1">  "Acercar la Tecnología al servicio de la Vida, desarrollando Proyectos innovadores". Desde nuestros orígenes hemos trabajado con Tecnología de Misión Crítica, comercializando Equipamiento Médico de Alta Complejidad junto a los fabricantes más importantes de todo el mundo (Drager Medical, Philips, Siemmens, General Electric y Marquette, entre otros). </li>
-
+            <li class="p-li row">
+              <div class="d-flex align-items-start">
+                <img src="../img/iconos-fondo-azul/target-icon.svg" class="mx-4" alt="">
+                <p> <b>"Acercar la Tecnología al servicio de la Vida, desarrollando Proyectos innovadores".</b> Desde
+                  nuestros orígenes hemos trabajado con Tecnología de Misión Crítica, <b>comercializando Equipamiento
+                    Médico de Alta Complejidad junto a los fabricantes más importantes de todo el mundo</b> (Drager
+                  Medical, Philips, Siemmens, General Electric y Marquette, entre otros).</p>
+              </div>
+            </li>
             <!-- parrafo 2 -->
-            <li class="p-li icon-li-2">Instalamos equipamiento en todos los rincones del República Argentina, trabajando junto a todos los Ministerios de Salud de cada una de las Provincias, así como en Proyectos PNUD y en todo el ámbito privado. Desde las Clínicas y Hospitales más grandes, modernos y complejos, hasta los Centros de Salud más pequeños y alejados, trabajamos codo a codo para que todos tengan acceso a Tecnología de última generación.</li>
+            <li class="p-li row">
+              <div class="col-2">
+
+              </div>
+              <div class="d-flex align-items-start">
+                <img src="img/iconos-fondo-azul/cross-icon.svg" class="mx-4" alt="">
+                <p>Instalamos equipamiento en todos los rincones del República Argentina, trabajando junto a todos los
+                  Ministerios de Salud de cada una de las Provincias, así como en Proyectos PNUD y en todo el ámbito
+                  privado. Desde las Clínicas y Hospitales más grandes, modernos y complejos, hasta los Centros de Salud
+                  más pequeños y alejados, trabajamos codo a codo para que todos tengan acceso a Tecnología de última
+                  generación.</p>
+              </div>
+            </li>
 
             <!-- parrafo 3 -->
-            <li class="p-li icon-li-3">Invertimos constantemente en la capacitación de nuestros Recursos Humanos, acompañando la velocidad que los cambios Tecnológicos requieren, estando preparados para enfrentar nuevos desafíos.</li>
-
+            <li class="p-li row">
+              <div class="d-flex align-items-start">
+                <img src="img/iconos-fondo-azul/computer-icon.svg" class="mx-4" alt="">
+                <p>Invertimos constantemente en la capacitación de nuestros Recursos Humanos, acompañando la velocidad
+                  que los cambios Tecnológicos requieren, estando preparados para enfrentar nuevos desafíos.</p>
+              </div>
+            </li>
             <!-- parrafo 4 -->
-            <li class="p-li icon-li-4">Gracias a nuestra historia y amplio know-how sobre Innovación y Tecnología, nos hemos convertido en referentes de la Industria Médica, lo que nos ha llevado en los últimos años a abrir nuevas Unidades de Negocio sumamente atractivas y diferenciales en otras industrias. Nuestro Directorio posee más de 40 años de experiencia en el ámbito de la Salud, abriendo nuevos mercados y generando confianza en nuestros clientes gracias a la excelencia de nuestros productos. Hemos comercializado nuestros productos por toda la República Argentina, afianzando los objetivos de nuestros clientes, tanto en el ámbito público como en el privado. Nuestros clientes son parte de nuestro equipo, y es por eso, que nuestro Servicio Posventa es nuestra máxima prioridad. Estamos siempre al lado  de cada uno en forma personalizada.</li>
+            <li class="p-li row">
+              <div class="d-flex align-items-start">
+                <img src="img/iconos-fondo-azul/book-icon.svg" class="mx-4" alt="">
+                <p>Gracias a nuestra historia y amplio know-how sobre Innovación y Tecnología, nos hemos convertido en
+                  referentes de la Industria Médica, lo que nos ha llevado en los últimos años a abrir nuevas Unidades
+                  de Negocio sumamente atractivas y diferenciales en otras industrias. Nuestro Directorio posee más de
+                  40 años de experiencia en el ámbito de la <b>Salud, abriendo nuevos mercados y generando confianza en
+                    nuestros clientes gracias a la excelencia de nuestros productos. Hemos comercializado nuestros
+                    productos</b> por toda la República Argentina, afianzando los objetivos de nuestros clientes, tanto
+                  en el ámbito público como en el privado. Nuestros clientes son parte de nuestro equipo, y es por eso,
+                  que nuestro Servicio Posventa es nuestra máxima prioridad. Estamos siempre al lado de cada uno en
+                  forma personalizada.</p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
