@@ -1,30 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Monstserrat-Thin", sans-serif;
+  font-family: "Monstserrat-Bold", sans-serif;
 }
 @font-face {
   * {
-    font-family: "Monstserrat-Thin";
-    src: url("../font/Montserrat-Thin.ttf") format("ttf");
+    font-family: "Monstserrat-Bold";
+    src: url("../font/Montserrat-Bold.ttf") format("ttf");
   }
 }
 
-header {
-  width: 100%;
-  height: 50rem;
-  background-image: url("../img/imagenes-background/header-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@font-face {
+  font-family: "nueva";
+  src: url("../") format("ttf");
 }
-
+/* ----------------------------------- MAP -------------------------------------- */
+/*------------------------------------- HOME ------------------------------------*/
+/* HEADER */
+/* Navegador */
 .navbar {
   width: 100%;
   position: fixed;
   z-index: 1;
 }
 .navbar h1 {
+  font-family: "Monstserrat-Bold";
   margin: 0 8rem;
+}
+.navbar .active {
+  color: #46a9ca !important;
+  font-weight: bold;
 }
 .navbar .navbar-collapse {
   flex-grow: unset;
@@ -39,87 +44,104 @@ header {
   border-radius: 50px;
 }
 
-.active {
-  color: #46a9ca !important;
-  font-weight: bold;
+/* MAIN */
+/*Seccion Presentacion */
+.container-presentation {
+  background-image: url("../img/imagenes-background/header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50rem;
 }
-
-.card {
-  border: 1px solid black;
-  min-height: 15rem;
-}
-
-.m-height {
-  min-height: 8rem;
-}
-
-.m-height-2 {
-  min-width: 30rem;
-  min-height: 50rem;
-}
-
-.presentation {
+.container-presentation .presentation {
   display: flex;
   width: 100%;
 }
+.container-presentation .presentation h2 {
+  color: #10023A;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
+/* seccion INTRODUCCION */
 .section-introdution {
   position: relative;
   bottom: 10rem;
 }
-
-.parrafo {
-  font-size: 1.5rem;
-  background-color: white;
-  border: 1px solid;
-  width: 50%;
+.section-introdution .card {
+  border: 1px solid black;
+  min-height: 15rem;
+}
+.section-introdution .card .m-height {
+  min-height: 8rem;
 }
 
-.p-1 {
+/*Seccion Desarrollo - Implementacion - Soporte */
+/* En Esta seccion esta todo hecho via Bootstrap */
+/* Salvo la clase CARD y la clase CENTER que son genericas*/
+.section-faster-and-secure h2 {
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+.section-faster-and-secure p {
   line-height: 3rem;
   font-size: 2rem;
 }
 
+/*Seccion Nuestros productos */
 .products {
   background-image: url("../img/imagenes-background/bg-cards.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  /*----------- primera columna */
+}
+.products h2 {
+  padding: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 .products .container-products {
   margin: 1rem 0.5rem 0.5rem 2rem;
 }
-
-.card-product {
+.products .container-products .card-product {
   height: 50%;
 }
-.card-product .main-content {
+.products .container-products .card-product .main-content {
   min-height: 230px;
   background: #fff;
   margin: 0.5rem;
 }
-.card-product .main-content h4 {
+.products .container-products .card-product .main-content h4 {
   margin: 1.5rem;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.card-product .main-content p {
+.products .container-products .card-product .main-content p {
   font-size: 1.5rem;
   margin: 0.8rem;
   padding-left: 0.8rem;
 }
-.card-product .main-content .container-btn {
+.products .container-products .card-product .main-content .container-btn {
   display: flex;
   justify-content: end;
 }
-.card-product .main-content .container-btn .btn {
+.products .container-products .card-product .main-content .container-btn .btn {
   border: 1px solid black;
   margin: 0.25rem;
 }
-.card-product .main-content .container-btn .btn:hover {
+.products .container-products .card-product .main-content .container-btn .btn:hover {
   border: none;
 }
 
+/*--------------- Segunda Columna */
 .sidebar-content {
   display: flex;
   min-height: 150px;
@@ -148,18 +170,65 @@ header {
   border: none;
 }
 
-.content {
-  min-height: 45rem;
-  background: #dbdfe5;
-}
+/* Seccion NOSOTROS */
+#nosotros {
+  /* 
+  .btn-nav {
 
-.p-li {
+  } */
+}
+#nosotros .parrafos {
+  position: relative;
+  right: 5rem;
+}
+#nosotros .parrafos li {
   list-style: none;
   margin: 1rem;
   padding: 1rem;
 }
+#nosotros .content {
+  min-height: 45rem;
+  background: #dbdfe5;
+}
+#nosotros .content .m-height-2 {
+  min-width: 30rem;
+  min-height: 50rem;
+}
 
+/*------------------------------------- PRODUCTOS ---------------------------*/
+/* Ihos */
+.hospitalizacion {
+  background-image: url("../img/imagenes-background/Rectangle-LightBlue.png");
+  height: 466px;
+  width: 100%;
+}
+.hospitalizacion h3 {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.hospitalizacion p {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* ------------------------------ @Medias Query ----------------------------------*/
+/* EL BOTON SE REPITE EN VARIAS PARTES PERO CON DISTINTOS COLORES Y ALGUNOS ACTIVADOS Y OTROS NO
+LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
 .btn {
+  color: blanchedalmond;
+  /* sss */
+  background: #1E43E1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), inset 15px 21px 40px rgba(9, 189, 228, 0.8), inset 10px 9px 12px #0595F0;
+  border-radius: 150px;
+  /* ssss */
   margin-left: auto;
   margin-right: auto;
   width: 200px;
@@ -168,8 +237,17 @@ header {
   border-radius: 50px;
 }
 .btn:hover {
+  /* hacer un gardient con colores de map get */
   background-image: linear-gradient(#9cd6c0, #00db87);
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.295);
+}
+
+/* Clases genericas */
+.card {
+  border: 1px solid black;
+}
+.card .btn {
+  margin: 1rem auto;
 }
 
 .center {
@@ -183,15 +261,6 @@ header {
 /* MediaQuery */
 /* .col-6 {
     width: 50%;
-} */
-.parrafos {
-  position: relative;
-  right: 5rem;
-}
-
-/* 
-.btn-nav {
-
 } */
 
 /*# sourceMappingURL=style.css.map */
