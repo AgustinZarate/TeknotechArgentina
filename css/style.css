@@ -59,12 +59,13 @@ border-radius: 0px;
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 20px;
+  
 }
 .span-row-2{grid-row: span 2 / auto;}
 
-.span-row-3{grid-row: span 3 / auto;}
+
 
 /*Seccion Presentacion */
 .container-presentation {
@@ -73,7 +74,7 @@ border-radius: 0px;
   background-repeat: no-repeat;
   width: 100%;
   height: 50rem;
-  margin: 1rem 0 4rem 0;
+  margin:0 auto;
 }
 .container-presentation .presentation {
   display: flex;
@@ -93,6 +94,7 @@ border-radius: 0px;
 .section-introdution {
   position: relative;
   bottom: 10rem;
+  margin-top: 15vh;
 }
 .section-introdution .card {
   border: 1px solid black;
@@ -121,8 +123,9 @@ border-radius: 0px;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 200px 10%;
+  padding-top: 100px;
+  margin-top: 6rem;
   /*----------- primera columna */
 }
 .products h2 {
@@ -301,6 +304,7 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
 }
 .sombraCard {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 0px;
 }
 
 /* MediaQuery */
@@ -408,22 +412,24 @@ input#nombre,
 /* SOBRE NOS */
 
 .sobreNos {
-  margin: 1rem 15%;
+  padding: 1rem 4rem ;
+  
   font-family: Montserrat;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
   line-height: 63px;
   letter-spacing: 0em;
-  text-align: center;
+  
 }
 .sobreNos-sub {
-  margin: 1rem 15%;
+  padding: 0 4rem ;
+  
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
   letter-spacing: 0em;
-  text-align: center;
+  
 }
