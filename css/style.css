@@ -24,48 +24,88 @@
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
+  margin: 0 20vh 0 5rem;
 }
 .navbar {
   width: 100%;
   position: fixed;
   z-index: 1;
   height: 96px;
-
-
-border-radius: 0px;
-
+  border-radius: 0px;
 }
-.navbar h1 {
-  margin: 0 8rem;
+.navbar-nav {
+  margin: 0 20vh 0 0;
 }
 .navbar .active {
   color: #46a9ca !important;
   font-weight: bold;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 .navbar .navbar-collapse {
   flex-grow: unset;
 }
 .navbar .navbar-collapse .navbar-nav a {
-  margin: 0.5rem;
-  font-size: 1.2rem;
+  margin: 0.5rem 2rem;
   transition: all 0s;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1A242E;
 }
 .navbar .navbar-collapse .navbar-nav a:hover {
   background-image: linear-gradient(#9cd6c0, #00db87);
   border-radius: 50px;
 }
+#buscador {
+  margin: auto;
+  background-color: #d9d9d9;
+  border-radius: 72px;
+  border: 0;
+}
+input:focus {
+  color:black;
+  background-color:#d9d9d9;
+  outline: none;
+}
+.botonBuscador {
+  margin: 0 1rem 0 0;
+  border-radius: 72px;
+  border: 0;
+  background: #d9d9d9;
+  width: 19px;
+}
+.contenedorBuscador {
+  display: flex;
+  height: 34px;
+  margin: 0.5rem auto;
+  padding-left: 1rem;
+  background-color: #d9d9d9;
+  border-radius: 72px;
+}
+
 
 /* MAIN */
 
+
+/* grid nuestros productos */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-gap: 20px;
-  
 }
-.span-row-2{grid-row: span 2 / auto;}
-
-
+.span-row-2 {
+  grid-row: span 2 / auto;
+}
 
 /*Seccion Presentacion */
 .container-presentation {
@@ -74,7 +114,7 @@ border-radius: 0px;
   background-repeat: no-repeat;
   width: 100%;
   height: 50rem;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .container-presentation .presentation {
   display: flex;
@@ -94,7 +134,7 @@ border-radius: 0px;
 .section-introdution {
   position: relative;
   bottom: 10rem;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 .section-introdution .card {
   border: 1px solid black;
@@ -119,7 +159,7 @@ border-radius: 0px;
 /*Seccion Nuestros productos */
 
 .products {
-  background-image: url("../img/imagenes-background/bg-cards.png");
+  /* background-image: url("../img/imagenes-background/bg-cards.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -341,9 +381,6 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
   text-align: left;
   font-family: Montserrat;
   line-height: 55px;
-
-
-
 }
 
 /* CONTACTO */
@@ -412,24 +449,22 @@ input#nombre,
 /* SOBRE NOS */
 
 .sobreNos {
-  padding: 1rem 4rem ;
-  
+  padding: 1rem 4rem;
+
   font-family: Montserrat;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
   line-height: 63px;
   letter-spacing: 0em;
-  
 }
 .sobreNos-sub {
-  padding: 0 4rem ;
-  
+  padding: 0 4rem;
+
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
   letter-spacing: 0em;
-  
 }
