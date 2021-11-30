@@ -27,7 +27,7 @@
   margin: 0 20vh 0 5rem;
 }
 .navbar {
-  width: 100%;
+  width: 1440px;
   position: fixed;
   z-index: 1;
   height: 96px;
@@ -104,7 +104,6 @@ input:focus {
 .span-row-2 {
   grid-row: span 2 / auto;
 }
-
 /*Seccion Presentacion */
 .container-presentation {
   background-image: url("../img/imagenes-background/header-img.jpg");
@@ -142,6 +141,22 @@ input:focus {
   min-height: 8rem;
 }
 
+/* icons cards */
+.icon-cards {
+  width: 10rem;
+  height: 10rem;
+  margin: 10% auto;
+}
+.text-cards {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1rem auto 4rem auto;
+}
 /*Seccion Desarrollo - Implementacion - Soporte */
 /* En Esta seccion esta todo hecho via Bootstrap */
 /* Salvo la clase CARD y la clase CENTER que son genericas*/
@@ -243,10 +258,7 @@ input:focus {
 
 /* Seccion NOSOTROS */
 #nosotros {
-  /* 
-  .btn-nav {
-
-  } */
+  padding-top: 10rem;
 }
 .parrafos ul {
   padding: 0;
@@ -289,7 +301,34 @@ input:focus {
 .img-sobreNos2 {
   width: 519px;
   height: 509px;
-  border-radius: 10pxv;
+  border-radius: 10px;
+}
+
+.sobreNos {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+}
+.sobreNos-sub {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.textoNosotros {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 134.4%;
+  padding: 0 2rem;
+  text-align: left;
 }
 
 /*------------------------------------- PRODUCTOS ---------------------------*/
@@ -411,7 +450,7 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
 #contacto {
   height: 100vh;
   width: 800px;
-  padding-top: 10vh;
+  padding-top: 8rem;
 }
 input#nombre,
 #institucion,
@@ -467,34 +506,5 @@ input#nombre,
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;
-}
-
-/* SOBRE NOS */
-
-.sobreNos {
-  font-family: Montserrat;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 63px;
-  letter-spacing: 0em;
-}
-.sobreNos-sub {
-  font-family: Montserrat;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: right;
-}
-.textoNosotros {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 134.4%;
-  padding: 0 2rem;
   text-align: left;
 }
