@@ -60,7 +60,7 @@
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-  color: #1A242E;
+  color: #1a242e;
 }
 .navbar .navbar-collapse .navbar-nav a:hover {
   background-image: linear-gradient(#9cd6c0, #00db87);
@@ -73,8 +73,8 @@
   border: 0;
 }
 input:focus {
-  color:black;
-  background-color:#d9d9d9;
+  color: black;
+  background-color: #d9d9d9;
   outline: none;
 }
 .botonBuscador {
@@ -93,9 +93,7 @@ input:focus {
   border-radius: 72px;
 }
 
-
 /* MAIN */
-
 
 /* grid nuestros productos */
 .grid {
@@ -250,14 +248,29 @@ input:focus {
 
   } */
 }
+.parrafos ul {
+  padding: 0;
+}
 #nosotros .parrafos {
   position: relative;
-  right: 5rem;
+  right: 1rem;
+  height: 10%;
+  margin: 0 auto;
+  width: 50%;
+  text-align: justify;
+  padding: 0;
 }
 #nosotros .parrafos li {
   list-style: none;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0 1rem;
+  padding: 0rem;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 #nosotros .content {
   min-height: 45rem;
@@ -266,6 +279,17 @@ input:focus {
 #nosotros .content .m-height-2 {
   min-width: 30rem;
   min-height: 50rem;
+}
+.img-sobreNos {
+  height: 438px;
+  width: 600px;
+  border-radius: 10px;
+  padding-left: 2rem;
+}
+.img-sobreNos2 {
+  width: 519px;
+  height: 509px;
+  border-radius: 10pxv;
 }
 
 /*------------------------------------- PRODUCTOS ---------------------------*/
@@ -449,8 +473,6 @@ input#nombre,
 /* SOBRE NOS */
 
 .sobreNos {
-  padding: 1rem 4rem;
-
   font-family: Montserrat;
   font-size: 45px;
   font-style: normal;
@@ -459,12 +481,20 @@ input#nombre,
   letter-spacing: 0em;
 }
 .sobreNos-sub {
-  padding: 0 4rem;
-
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
   letter-spacing: 0em;
+  text-align: right;
+}
+.textoNosotros {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 134.4%;
+  padding: 0 2rem;
+  text-align: left;
 }
