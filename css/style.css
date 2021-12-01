@@ -4,10 +4,10 @@
   font-family: "Monstserrat-Bold", sans-serif;
 }
 @font-face {
-  * {
+  
     font-family: "Monstserrat-Bold";
     src: url("../font/Montserrat-Bold.ttf") format("ttf");
-  }
+  
 }
 
 @font-face {
@@ -25,24 +25,64 @@
   position: fixed;
   z-index: 1;
 }
-.navbar h1 {
-  margin: 0 8rem;
+.navbar-nav {
+  margin: 0 20vh 0 0;
 }
 .navbar .active {
   color: #46a9ca !important;
   font-weight: bold;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 .navbar .navbar-collapse {
   flex-grow: unset;
 }
 .navbar .navbar-collapse .navbar-nav a {
-  margin: 0.5rem;
-  font-size: 1.2rem;
+  margin: 0.5rem 2rem;
   transition: all 0s;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1a242e;
 }
 .navbar .navbar-collapse .navbar-nav a:hover {
   background-image: linear-gradient(#9cd6c0, #00db87);
   border-radius: 50px;
+}
+#buscador {
+  margin: auto;
+  background-color: #d9d9d9;
+  border-radius: 72px;
+  border: 0;
+}
+input:focus {
+  color: black;
+  background-color: #d9d9d9;
+  outline: none;
+}
+.botonBuscador {
+  margin: 0 1rem 0 0;
+  border-radius: 72px;
+  border: 0;
+  background: #d9d9d9;
+  width: 19px;
+}
+.contenedorBuscador {
+  display: flex;
+  height: 34px;
+  margin: 0.5rem auto;
+  padding-left: 1rem;
+  background-color: #d9d9d9;
+  border-radius: 72px;
 }
 
 /* MAIN */
@@ -72,6 +112,7 @@
 .section-introdution {
   position: relative;
   bottom: 10rem;
+  margin-top: 10vh;
 }
 .section-introdution .card {
   border: 1px solid black;
@@ -81,6 +122,22 @@
   min-height: 8rem;
 }
 
+/* icons cards */
+.icon-cards {
+  width: 10rem;
+  height: 10rem;
+  margin: 10% auto;
+}
+.text-cards {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1rem auto 4rem auto;
+}
 /*Seccion Desarrollo - Implementacion - Soporte */
 /* En Esta seccion esta todo hecho via Bootstrap */
 /* Salvo la clase CARD y la clase CENTER que son genericas*/
@@ -95,12 +152,13 @@
 
 /*Seccion Nuestros productos */
 .products {
-  background-image: url("../img/imagenes-background/bg-cards.png");
+  /* background-image: url("../img/imagenes-background/bg-cards.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 200px 10%;
+  padding-top: 100px;
+  margin-top: 6rem;
   /*----------- primera columna */
 }
 .products h2 {
@@ -173,19 +231,31 @@
 
 /* Seccion NOSOTROS */
 #nosotros {
-  /* 
-  .btn-nav {
-
-  } */
+  padding-top: 10rem;
+}
+.parrafos ul {
+  padding: 0;
 }
 #nosotros .parrafos {
   position: relative;
-  right: 5rem;
+  right: 1rem;
+  height: 10%;
+  margin: 0 auto;
+  width: 50%;
+  text-align: justify;
+  padding: 0;
 }
 #nosotros .parrafos li {
   list-style: none;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0 1rem;
+  padding: 0rem;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 #nosotros .content {
   min-height: 45rem;
@@ -194,6 +264,44 @@
 #nosotros .content .m-height-2 {
   min-width: 30rem;
   min-height: 50rem;
+}
+.img-sobreNos {
+  height: 438px;
+  width: 600px;
+  border-radius: 10px;
+  padding-left: 2rem;
+}
+.img-sobreNos2 {
+  width: 519px;
+  height: 509px;
+  border-radius: 10px;
+}
+
+.sobreNos {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+}
+.sobreNos-sub {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.textoNosotros {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 134.4%;
+  padding: 0 2rem;
+  text-align: left;
 }
 
 /* hr{ 
@@ -533,9 +641,110 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
   width: auto;
 }
 
+
+.sombraCard {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 0px;
+}
+
+
 /* MediaQuery */
 /* .col-6 {
     width: 50%;
 } */
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* TITULOS */
+.titulo {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.sub-titulo {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 62, 73px;
+}
+.sub-tituloLighter {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Montserrat;
+  line-height: 55px;
+}
+
+/* CONTACTO */
+#contacto {
+  height: 100vh;
+  width: 800px;
+  padding-top: 8rem;
+}
+input#nombre,
+#institucion,
+#email,
+#tel,
+#mensaje {
+  border-radius: 8px;
+}
+#mensaje {
+  height: 262px;
+  width: 656px;
+  left: 317px;
+  border-radius: 13px;
+}
+#label {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 9px;
+}
+.form-title {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.camposObligatorios {
+  height: 27.11572265625px;
+  width: 324px;
+  left: 317px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 20px;
+  font-family: Montserrat;
+}
+::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
