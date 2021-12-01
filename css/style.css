@@ -4,36 +4,26 @@
   font-family: "Monstserrat-Bold", sans-serif;
 }
 @font-face {
-  font-family: "Monstserrat-Bold";
-  src: url("../font/Montserrat-Bold.ttf") format("ttf");
+  * {
+    font-family: "Monstserrat-Bold";
+    src: url("../font/Montserrat-Bold.ttf") format("ttf");
+  }
 }
 
 @font-face {
-  font-family: "Autobus";
-  src: url("../font/aAutobusOmnibus.woff") format("woff");
+  font-family: "nueva";
+  src: url("../") format("ttf");
 }
 /* ----------------------------------- MAP -------------------------------------- */
 /*------------------------------------- HOME ------------------------------------*/
 /* HEADER */
 /* Navegador */
-.brand-title {
-  font-family: "Autobus";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-}
 .navbar {
+  position: absolute;
+  top: 0rem;
   width: 100%;
   position: fixed;
   z-index: 1;
-  height: 96px;
-
-
-border-radius: 0px;
-
 }
 .navbar h1 {
   margin: 0 8rem;
@@ -56,16 +46,6 @@ border-radius: 0px;
 }
 
 /* MAIN */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-.span-row-2{grid-row: span 2 / auto;}
-
-.span-row-3{grid-row: span 3 / auto;}
-
 /*Seccion Presentacion */
 .container-presentation {
   background-image: url("../img/imagenes-background/header-img.jpg");
@@ -73,14 +53,13 @@ border-radius: 0px;
   background-repeat: no-repeat;
   width: 100%;
   height: 50rem;
-  margin: 1rem 0 4rem 0;
 }
 .container-presentation .presentation {
   display: flex;
   width: 100%;
 }
 .container-presentation .presentation h2 {
-  color: #10023a;
+  color: #10023A;
   font-size: 90px;
   font-style: normal;
   font-weight: 700;
@@ -115,7 +94,6 @@ border-radius: 0px;
 }
 
 /*Seccion Nuestros productos */
-
 .products {
   background-image: url("../img/imagenes-background/bg-cards.png");
   background-size: cover;
@@ -160,12 +138,7 @@ border-radius: 0px;
   border: 1px solid black;
   margin: 0.25rem;
 }
-.products
-  .container-products
-  .card-product
-  .main-content
-  .container-btn
-  .btn:hover {
+.products .container-products .card-product .main-content .container-btn .btn:hover {
   border: none;
 }
 
@@ -175,13 +148,11 @@ border-radius: 0px;
   min-height: 150px;
   margin-bottom: 30px;
   background: #fff;
-  border-radius: 10px;
 }
 .sidebar-content .content-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 10px;
 }
 .sidebar-content .content-card h4 {
   margin: 1rem;
@@ -225,8 +196,64 @@ border-radius: 0px;
   min-height: 50rem;
 }
 
+/* hr{ 
+
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         100vh;
+    width:          1px;       
+} */
 /*------------------------------------- PRODUCTOS ---------------------------*/
+/* iHos */
 /* Ihos */
+.presentation-ihos {
+  padding: 6rem;
+}
+.presentation-ihos .card-ihos {
+  position: absolute;
+  top: 10rem;
+  width: 550px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.presentation-ihos .card-ihos h2 {
+  font-size: 45px;
+  line-height: 62, 73px;
+}
+.presentation-ihos .card-ihos h2 span {
+  color: #0595F0;
+}
+.presentation-ihos img {
+  border-radius: 10px;
+}
+
+.ihos-intro ul .first {
+  list-style-image: url("../img/productos/ihos/icono-user.png");
+}
+.ihos-intro ul .first p {
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1rem;
+}
+.ihos-intro ul .second {
+  list-style-image: url("../img/productos/ihos/icono-ahorro.png");
+}
+.ihos-intro ul .second p {
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1rem;
+}
+.ihos-intro ul .third {
+  list-style-image: url("../img/productos/ihos/icono-aumento.png");
+}
+.ihos-intro ul .third p {
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* Hospitalizacion */
 .hospitalizacion {
   background-image: url("../img/imagenes-background/Rectangle-LightBlue.png");
   height: 466px;
@@ -249,39 +276,241 @@ border-radius: 0px;
   text-align: center;
 }
 
+/* iBox OR */
+/* header */
+.presentation-ibox {
+  background-image: url("../img/productos/ibox/presentacion-ibox.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+}
+.presentation-ibox .card-ibox {
+  margin-top: 3rem;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.presentation-ibox .card-ibox h2 {
+  font-size: 45px;
+  line-height: 62, 73px;
+}
+.presentation-ibox .card-ibox h2 span {
+  color: #0595F0;
+}
+.presentation-ibox .card-ibox p {
+  font-size: 25px;
+  line-height: 33, 6px;
+}
+
+.beneficios img {
+  border-radius: 10px;
+}
+.beneficios p {
+  font-size: 15px;
+}
+
+/* main */
+.cards-ibox {
+  position: relative;
+  bottom: 7rem;
+}
+.cards-ibox .card {
+  border: none;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.295);
+}
+
+/* iFarma */
+/* header */
+.presentation-ifarma {
+  background-image: url("../img/productos/ifarma/presentacion-ifarma.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  margin: 0.5rem auto 10rem;
+  border-radius: 5px;
+}
+.presentation-ifarma .card-ifarma {
+  margin-top: 1rem;
+  width: 600px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.presentation-ifarma .card-ifarma h2 {
+  font-size: 45px;
+  line-height: 62, 73px;
+}
+.presentation-ifarma .card-ifarma h2 span {
+  color: #0595F0;
+}
+.presentation-ifarma .card-ifarma p {
+  font-size: 25px;
+  line-height: 33, 6px;
+}
+
+/* main */
+.cards-ifarma {
+  margin-top: 1rem;
+}
+.cards-ifarma p {
+  font-size: 18px;
+  line-height: 24, 19px;
+}
+.cards-ifarma .card {
+  border: none;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.295);
+}
+
+.sobre-ifarma {
+  margin: 10rem auto;
+}
+.sobre-ifarma h5 {
+  font-size: 20px;
+}
+.sobre-ifarma p {
+  font-size: 20px;
+}
+.sobre-ifarma .datos-ifarma {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sobre-ifarma .datos-ifarma ul {
+  margin-left: 5rem;
+}
+.sobre-ifarma .datos-ifarma ul .first {
+  list-style-image: url("../img/productos/ifarma/fondo-azul/icono-precio.png");
+}
+.sobre-ifarma .datos-ifarma ul .first p {
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1rem;
+}
+.sobre-ifarma .datos-ifarma ul .second {
+  list-style-image: url("../img/productos/ifarma/fondo-azul/icono-reloj.png");
+}
+.sobre-ifarma .datos-ifarma ul .second p {
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1rem;
+}
+.sobre-ifarma .datos-ifarma ul .third {
+  list-style-image: url("../img/productos/ifarma/fondo-azul/icono-grown.png");
+}
+.sobre-ifarma .datos-ifarma ul .third p {
+  position: relative;
+  bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* iTraz */
+/* Ihos */
+.presentation-itraz {
+  padding: 6rem;
+}
+.presentation-itraz .card-itraz {
+  position: absolute;
+  top: 10rem;
+  width: 550px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.presentation-itraz .card-itraz h2 {
+  font-size: 45px;
+  line-height: 62, 73px;
+}
+.presentation-itraz .card-itraz h2 span {
+  color: #0595F0;
+}
+.presentation-itraz img {
+  height: 410px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.itraz-intro h5 {
+  margin-bottom: 1.5rem;
+}
+.itraz-intro .col-6 {
+  margin: 1rem 0;
+}
+
+.cards-itraz {
+  margin: 0 5rem;
+  padding: 5rem;
+}
+.cards-itraz p {
+  font-size: 18px;
+  line-height: 24, 19px;
+}
+.cards-itraz .card {
+  border: none;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.295);
+}
+.cards-itraz .datos-secundarios {
+  margin: 4rem 0;
+}
+
+/* ID Pacientes */
+.presentation-id-pacientes {
+  padding: 6rem;
+}
+.presentation-id-pacientes .card-id-pacientes {
+  position: absolute;
+  top: 10rem;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.presentation-id-pacientes .card-id-pacientes h2 {
+  font-size: 45px;
+  line-height: 62, 73px;
+}
+.presentation-id-pacientes .card-id-pacientes h2 span {
+  color: #0595F0;
+}
+.presentation-id-pacientes img {
+  height: 410px;
+  width: 600px;
+  border-radius: 10px;
+}
+
 /* ------------------------------ @Medias Query ----------------------------------*/
 /* EL BOTON SE REPITE EN VARIAS PARTES PERO CON DISTINTOS COLORES Y ALGUNOS ACTIVADOS Y OTROS NO
 LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
 .btn {
   color: blanchedalmond;
   /* sss */
-  background: #1e43e1;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25),
-    inset 15px 21px 40px rgba(9, 189, 228, 0.8), inset 10px 9px 12px #0595f0;
-  border: 0;
+  background: #1E43E1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25), inset 15px 21px 40px rgba(9, 189, 228, 0.8), inset 10px 9px 12px #0595F0;
+  border-radius: 150px;
   /* ssss */
   margin-left: auto;
   margin-right: auto;
-
+  width: 200px;
+  height: 40px;
   /*     border: 1px solid black; */
-  height: 68px;
-  width: 287px;
-  left: 112px;
-  top: 693px;
-  border-radius: 150px;
-  padding: 19px, 60px, 19px, 60px;
-  font-family: Montserrat;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: center;
+  border-radius: 50px;
 }
 .btn:hover {
   /* hacer un gardient con colores de map get */
   background-image: linear-gradient(#9cd6c0, #00db87);
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.295);
+}
+
+.btn-white {
+  height: 58px;
+  width: 287px;
+  left: 0px;
+  top: 0px;
+  border-radius: 120px;
 }
 
 /* Clases genericas */
@@ -296,11 +525,12 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
   margin: 1rem auto;
 }
 
+.border-radius {
+  border-radius: 10px;
+}
+
 .col-sm-6 {
   width: auto;
-}
-.sombraCard {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* MediaQuery */
@@ -309,121 +539,3 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
 } */
 
 /*# sourceMappingURL=style.css.map */
-
-/* TITULOS */
-.titulo {
-  font-family: Montserrat;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 63px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-.sub-titulo {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 45px;
-  line-height: 62, 73px;
-}
-.sub-tituloLighter {
-  font-family: Montserrat;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-align: left;
-  font-family: Montserrat;
-  line-height: 55px;
-
-
-
-}
-
-/* CONTACTO */
-#contacto {
-  height: 100vh;
-  width: 800px;
-  padding-top: 10vh;
-}
-input#nombre,
-#institucion,
-#email,
-#tel,
-#mensaje {
-  border-radius: 8px;
-}
-#mensaje {
-  height: 262px;
-  width: 656px;
-  left: 317px;
-  border-radius: 13px;
-}
-#label {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 9px;
-}
-.form-title {
-  font-family: Montserrat;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 63px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 100px;
-}
-.camposObligatorios {
-  height: 27.11572265625px;
-  width: 324px;
-  left: 317px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 20px;
-  font-family: Montserrat;
-}
-::placeholder {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-/* SOBRE NOS */
-
-.sobreNos {
-  margin: 1rem 15%;
-  font-family: Montserrat;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 63px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-.sobreNos-sub {
-  margin: 1rem 15%;
-  font-family: Montserrat;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: center;
-}

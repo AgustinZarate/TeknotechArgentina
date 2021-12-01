@@ -1,4 +1,63 @@
 /* Ihos */
+
+
+
+.presentation-ihos {
+    padding: 6rem;
+    .card-ihos{
+        position: absolute;
+        top: 10rem;
+        width: 550px;
+        height: 300px;
+        background-color: map-get($map, white );
+        border-radius: 10px;
+        h2 {
+            font-size: 45px;
+            line-height: 62,73px;
+            span {
+                color:map-get($map, light-blue );
+            }
+        }
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+
+.ihos-intro {
+    ul{
+        .first{
+            list-style-image: url("../img/productos/ihos/icono-user.png");
+            p {
+                position: relative;
+                bottom: 1.5rem;
+                margin-left: 1rem;
+            }
+        }
+        .second {
+            list-style-image: url("../img/productos/ihos/icono-ahorro.png");
+            p {
+                position: relative;
+                bottom: 1.5rem;
+                margin-left: 1rem;
+            }
+        }    
+        .third {
+            list-style-image: url("../img/productos/ihos/icono-aumento.png");
+            p {
+                position: relative;
+                bottom: 1.5rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+
+/* Hospitalizacion */
 .hospitalizacion {
     background-image: url("../img/imagenes-background/Rectangle-LightBlue.png");
     height: 466px;

@@ -29,7 +29,16 @@
 
 
 /*------------------------------------- PRODUCTOS ---------------------------*/
+/* iHos */
 @import "../scss/base/productos/ihos";
+/* iBox OR */
+@import "../scss/base/productos/ibox";
+/* iFarma */
+@import "../scss/base/productos/ifarma";
+/* iTraz */
+@import "../scss/base/productos/itraz";
+/* ID Pacientes */
+@import "../scss/base/productos/id-pacientes";
 
 
 
@@ -93,7 +102,9 @@ LO DEJO ACA PARA MAS ADELANTE ACOMODARLO BIEN */
 .center {
     margin: 1rem auto;
 }
-
+.border-radius {
+    border-radius: 10px;
+}
 .col-sm-6 {
     width: auto;
 }
